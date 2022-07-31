@@ -1,9 +1,9 @@
-import { JwtPayload } from './jwt-payload.interface';
-import { UsersService } from './../users/users.service';
-import { LoginUserDto } from './dtos/login-user.dto';
+import { JwtPayload } from './../jwt-payload.interface';
+import { UsersService } from './../../users/users.service';
+import { LoginUserDto } from './../dtos/login-user.dto'
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { UserEntity } from '../users/entities/user.entity';
+import { UserEntity } from '../../users/entities/user.entity';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
 
