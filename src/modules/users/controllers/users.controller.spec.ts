@@ -1,4 +1,4 @@
-import { UserDto } from './dtos/user.dto';
+import { UserDto } from './../dtos';
 import { UsersService } from './users.service';
 import { Test, TestingModule } from '@nestjs/testing';
 import { UsersController } from './users.controller';

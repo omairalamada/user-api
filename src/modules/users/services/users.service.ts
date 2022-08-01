@@ -1,11 +1,11 @@
 import { ErrorMessages } from '../../../common/error-messages.enum';
-import { UserEntity } from './../entities/user.entity';
-import { UserDto } from './../dtos/user.dto'
+import { UserEntity } from './../entities';
+import { UserDto } from './../dtos'
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { FindOneOptions, Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
-import { UserNotFoundException } from '../../../exceptions/user-not-found.exception';
+import { UserNotFoundException } from '../../../exceptions';
 
 @Injectable()
 export class UsersService { 

@@ -1,10 +1,10 @@
 import { ResponseDto } from '../../../common/dto/response.dto';
-import { UserEntity } from '../entities/user.entity';
-import { UsersService } from '../../users/services/users.service';
+import { UserEntity } from '../entities';
+import { UsersService } from '../../users/services';
 import { Body, Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UserDto } from '../dtos/user.dto';
-import { EditUserDocDecorator, GetAllUsersDoc, RegisterUserDocDecorator } from '../swagger/user-doc.decorator';
+import { UserDto } from '../dtos';
+import { EditUserDocDecorator, GetAllUsersDoc, RegisterUserDocDecorator } from '../swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { ACGuard, UseRoles } from 'nest-access-control';
 
