@@ -1,9 +1,9 @@
-import { UserEntity } from './entities/user.entity';
+import { UserEntity } from '../entities/user.entity';
 import { Repository } from 'typeorm';
 import { Test, TestingModule } from '@nestjs/testing';
 import { UsersService } from './users.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { UserRoles } from '../auth/user-roles';
+import { UserRoles } from '../../auth/user-roles';
 
 
 describe('UsersService', () => {
