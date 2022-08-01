@@ -1,4 +1,4 @@
-import { JwtPayload } from './../jwt-payload.interface';
+import { JwtPayload } from '../enterfaces/jwt-payload.interface';
 import { UsersService } from './../../users/users.service';
 import { LoginUserDto } from './../dtos/login-user.dto'
 import { Injectable, UnauthorizedException } from '@nestjs/common';

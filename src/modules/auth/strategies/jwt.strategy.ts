@@ -1,5 +1,5 @@
-import { JwtPayload } from './jwt-payload.interface';
-import { UserEntity } from './../users/entities/user.entity';
+import { JwtPayload } from '../enterfaces/jwt-payload.interface';
+import { UserEntity } from '../../users/entities/user.entity';
 import { Repository } from 'typeorm';
 import { Injectable, UnauthorizedException } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
